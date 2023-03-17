@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(47, 0, 84, 1) 30%,
+    rgba(75, 0, 78, 1) 90%
+  );
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.paragraphs {
+  margin: 30px 0;
+  color: white;
+}
+
+img {
+  border-radius: 50%;
+  width: 130px;
+  height: 150px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.wrapper .icon span {
+  position: relative;
+  z-index: 2;
+  color: white;
+  height: 60px;
+  width: 60px;
+  /*background: #fff;*/
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  transition: all 0.1s;
+}
+.wrapper .icon span i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.wrapper .icon:hover span {
+  color: #fff;
+}
+.wrapper .mail:hover span {
+  background: #0340bb;
+  border: 1px solid #0340bb;
+}
+.wrapper .linkedin:hover span {
+  background: #005a80;
+  border: 1px solid #005a80;
+}
+.wrapper .github:hover span {
+  background: #333;
+  border: 1px solid #333;
+}
+
+.downloadCVbtn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.downloadCVbtn:hover {
+  background-color: #211f1f;
+  color: #fff;
+}
+
+.wrapper .icon a {
+  text-decoration: none;
+  color: #000;
+}
+
+.underline-anim {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-anim::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.underline-anim:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
